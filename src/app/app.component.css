@@ -1,0 +1,33 @@
+.app-header {
+    
+    flex-direction: row;
+    height: 55px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #c8ced3;
+  }
+
+
+  /* #toggle{
+    display:none;
+  } */
+
+  #content{
+    position: relative;
+    left: 0;
+    transition: 0.3s left;
+    padding: 30px;
+  }
+
+
+  #toggle:checked~#content{
+    left: 240px;
+    }
+
+    #toggle:checked~#content{
+      width: calc(100% - 240px);
+      }
