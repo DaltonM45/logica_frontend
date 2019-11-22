@@ -1,5 +1,4 @@
 .app-header {
-    
     flex-direction: row;
     height: 55px;
     padding-top: 4px;
@@ -9,12 +8,15 @@
     margin: 0;
     background-color: #fff;
     border-bottom: 1px solid #c8ced3;
+    position: relative;
+    left: 0;
+    transition: 0.3s left;
   }
 
 
-  /* #toggle{
+#toggle{
     display:none;
-  } */
+} 
 
   #content{
     position: relative;
@@ -25,9 +27,52 @@
 
 
   #toggle:checked~#content{
-    left: 240px;
+    left: 280px;
+    }
+    #toggle:checked ~ .app-header{
+      left: 280px;
     }
 
-    #toggle:checked~#content{
-      width: calc(100% - 240px);
-      }
+    #toggle:checked~ .menu{
+     left: 0;
+     }
+     
+
+/* ESTILOS MENU */
+.menu{
+  position: fixed;
+	left: -280px;
+	top: 0;
+	bottom: 0;
+	width: 280px;
+	background-color: #1c3a58;
+	transition: 0.3s left;
+ }
+
+.menu .menu-header{
+   padding-top: 16px;
+   padding-bottom: 16px;
+   padding-left: 8px;
+   padding-right: 8px;
+ }
+ .menu-header p {
+   margin: 0px;
+ }
+ .menu .tm-nav{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left: 16px;
+   padding-right: 16px;
+ }
+ .menu .tm-nav p{margin-bottom: 0px;}
+
+ .menu .list-nav .nav-opt .nv-s{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+ .menu .list-nav .nav-opt .nv-s a:hover{
+  text-decoration: none;
+ }
