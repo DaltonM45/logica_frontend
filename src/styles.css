@@ -1,5 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 
+/*  */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+/* FONT AWESOME */
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 
+
+/* FONTS */
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("assets/fonts/roboto/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: Roboto-Thin;
+    src: url("assets/fonts/roboto/Roboto-Thin.ttf");
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("assets/fonts/roboto/Roboto-Bold.ttf");
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url("assets/fonts/roboto/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("assets/fonts/raleway/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: Raleway-Medium;
+    src: url("assets/fonts/raleway/Raleway-Medium.ttf");
+}
 
