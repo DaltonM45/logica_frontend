@@ -1,0 +1,11 @@
+para guardar cambios
+
+git pull
+
+git add .
+git commit -m "aqui va un mensaje"
+git push
+
+
+para ver los cambios de los demas
+git pull
