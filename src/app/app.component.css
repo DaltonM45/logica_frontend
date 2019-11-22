@@ -24,10 +24,19 @@
   }
 
 
-  #toggle:checked~#content{
-    left: 240px;
-    }
+
 
     #toggle:checked~#content{
-      width: calc(100% - 240px);
+     background-color: #f00;
       }
+
+
+
+      input[type=checkbox] + label {
+        color: #ccc;
+        font-style: italic;
+      } 
+      input[type=checkbox]:checked + label {
+        color: #f00;
+        font-style: normal;
+        font-size: 40px;      } 
