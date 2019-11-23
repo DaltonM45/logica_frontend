@@ -1,5 +1,5 @@
 #content{
-  position: relative;
+  position: absolute;
   left: 0;
   transition: 0.3s left;
   padding: 30px;
@@ -78,7 +78,7 @@
 
 /* ESTILOS MENU */
 .menu{
-  position: fixed;
+  position: absolute;
 	left: -280px;
 	top: 0;
 	bottom: 0;
