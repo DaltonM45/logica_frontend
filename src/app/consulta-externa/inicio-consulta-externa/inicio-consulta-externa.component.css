@@ -1,0 +1,25 @@
+.wl-fa{
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+}
+
+.wl-fa .wl{
+    justify-content: center;
+    flex-direction: row;
+}
+
+.wl-fa .wl .im{
+    display: flex;
+    justify-content: center;
+}
+
+.wl img{
+    width: 80px;
+    margin: auto;
+}
+
+p{
+    font-family: Raleway-Regular;
+    font-size: 28px;
+}

@@ -1,0 +1,21 @@
+
+
+.txt-m{
+    min-height: 50px;
+    max-height: 120px;
+}
+
+h3{
+    font-family: Roboto-Regular;
+}
+
+label{
+    font-family: Raleway-Regular;
+}
+
+.div-btn .ob{
+    width: 100%;
+    background-color: #1b8b8f;
+    color: #fff;
+    font-family: Roboto-Regular;
+}
