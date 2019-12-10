@@ -5,6 +5,11 @@ import { NgxMaskModule } from 'ngx-mask'
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -13,14 +18,22 @@ import { FormsModule } from '@angular/forms';
     NgxMaskModule.forRoot(),
     NgbModule,
     NgSelectModule,
-    FormsModule
+    FormsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatInputModule
   ],
   exports:[
     NgxMaskModule,
     ReactiveFormsModule,
     NgbModule,
     NgSelectModule,
-    FormsModule
+    FormsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatInputModule
   ]
 })
 export class SharedModule { }

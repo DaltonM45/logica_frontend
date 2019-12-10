@@ -12,7 +12,7 @@ export class HistoriaClinicaComponent implements OnInit {
 
   // ATIBUTOS
   FichaIdentificacionForm: FormGroup
-
+  date: {year: number, month: number};
 
   constructor(
     private formsBuilder: AllFormsManagerService,

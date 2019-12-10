@@ -70,3 +70,5 @@
   ng-select.ng-invalid .ng-select-container {
     border-color: #dc3545 !important;
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

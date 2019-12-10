@@ -19,7 +19,7 @@ export class AllFormsServices{
             'Apellidos': [null, [Validators.required]],
             'Apodo': [null],
             'Sexo': [null, [Validators.required]],
-            'FechaNacimiento': [null, [Validators.required]],
+            'FechaNacimiento': [null],
             'Sangre': [null, [Validators.required]],
             'EstadoCivil': [null, [Validators.required]],
             'Escolaridad': [null, [Validators.required]],
