@@ -27,12 +27,12 @@
         </div>
         <div class="form-group col-3">
             <label>Fecha de Nacimiento</label>
-
-            <mat-form-field>
+            <input type="text" placeholder="Datepicker" class="input-bb" bsDatepicker >
+            <!-- <mat-form-field>
                 <input  matInput  [matDatepicker]="picker" placeholder="" >
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
-            </mat-form-field>
+            </mat-form-field> -->
             <!-- <ngb-datepicker #dp formControlName="FechaNacimiento" (navigate)="date = $event.next"></ngb-datepicker> -->
             <!-- <input type="text" class="input-bb" formControlName="FechaNacimiento"> -->
         </div>

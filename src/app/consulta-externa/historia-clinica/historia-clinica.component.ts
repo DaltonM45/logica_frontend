@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AllFormsManagerService } from 'src/app/core/services/all-forms-manager.service';
 import { FormGroup } from '@angular/forms';
 
+
 @Component({
   selector: 'app-historia-clinica',
   templateUrl: './historia-clinica.component.html',
@@ -12,12 +13,19 @@ export class HistoriaClinicaComponent implements OnInit {
 
   // ATIBUTOS
   FichaIdentificacionForm: FormGroup
-  date: {year: number, month: number};
+
+  //datePickerConfig: Partial<BsDatepickerConfig>;
+  locale = 'de';
 
   constructor(
     private formsBuilder: AllFormsManagerService,
-    private formsManager: AllFormsManagerService
-  ) { }
+    private formsManager: AllFormsManagerService,
+   // private localeService: BsLocaleService
+  ) {
+    // this.datePickerConfig = Object.assign({}, {
+    //   containerClass:'theme-dark-blue'
+    // })
+   }
 
   selectedCars = [3];
   cars = [
@@ -67,7 +75,7 @@ export class HistoriaClinicaComponent implements OnInit {
   ngOnInit() {
     console.log('adasd')
     this.formsManager.setForms();
-
+    //this.localeService.use(this.locale);
     this.FichaIdentificacionForm = this.formsManager.getichaIdentificacionForms()
   }
 
