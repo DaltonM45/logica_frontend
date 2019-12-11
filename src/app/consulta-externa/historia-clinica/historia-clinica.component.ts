@@ -2,6 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { AllFormsManagerService } from 'src/app/core/services/all-forms-manager.service';
 import { FormGroup } from '@angular/forms';
 
+//DATE BOOTSTRAP
+import { BsDatepickerConfig, BsLocaleService } from 'ngx-bootstrap/datepicker';
+import { defineLocale } from 'ngx-bootstrap/chronos';
+import { esDoLocale } from 'ngx-bootstrap/locale';
+defineLocale('de', esDoLocale);
+
+
 
 @Component({
   selector: 'app-historia-clinica',
@@ -14,17 +21,17 @@ export class HistoriaClinicaComponent implements OnInit {
   // ATIBUTOS
   FichaIdentificacionForm: FormGroup
 
-  //datePickerConfig: Partial<BsDatepickerConfig>;
+  datePickerConfig: Partial<BsDatepickerConfig>;
   locale = 'de';
 
   constructor(
     private formsBuilder: AllFormsManagerService,
     private formsManager: AllFormsManagerService,
-   // private localeService: BsLocaleService
+    private localeService: BsLocaleService
   ) {
-    // this.datePickerConfig = Object.assign({}, {
-    //   containerClass:'theme-dark-blue'
-    // })
+    this.datePickerConfig = Object.assign({}, {
+      containerClass:'theme-dark-blue'
+    })
    }
 
   selectedCars = [3];
@@ -75,7 +82,7 @@ export class HistoriaClinicaComponent implements OnInit {
   ngOnInit() {
     console.log('adasd')
     this.formsManager.setForms();
-    //this.localeService.use(this.locale);
+    this.localeService.use(this.locale);
     this.FichaIdentificacionForm = this.formsManager.getichaIdentificacionForms()
   }
 

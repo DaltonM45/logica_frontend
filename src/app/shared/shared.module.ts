@@ -10,6 +10,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
 
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -22,7 +25,9 @@ import {MatInputModule} from '@angular/material/input';
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
+    BsDatepickerModule.forRoot(),
+    BrowserAnimationsModule
   ],
   exports:[
     NgxMaskModule,
@@ -33,7 +38,9 @@ import {MatInputModule} from '@angular/material/input';
     MatDatepickerModule,
     MatFormFieldModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
+    BsDatepickerModule,
+    BrowserAnimationsModule
   ]
 })
 export class SharedModule { }

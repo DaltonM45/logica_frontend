@@ -9,6 +9,9 @@
 /* ng select */
 @import "../node_modules/@ng-select/ng-select/themes/default.theme.css";
 
+/* BOOTSTRAP CSS DATEPICKER */
+@import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
+
 
 /* FONTS */
 @font-face {
