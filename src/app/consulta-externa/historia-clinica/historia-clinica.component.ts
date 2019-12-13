@@ -76,7 +76,13 @@ export class HistoriaClinicaComponent implements OnInit {
     {id: 6 , text: 'Diabetes'},
     {id: 7 , text: 'Hepatitis'},
     {id: 8 , text: 'Cancer'},
-    {id: 9 , text: 'Falcemia'}
+    {id: 10 , text: 'Falcemia'},
+    {id: 11 , text: 'Ex-adicto'},
+    {id: 12 , text: 'Tuberculósis'},
+    {id: 13, text: 'Traumatismo'},
+    {id: 14, text: 'Transfusión'},
+    {id: 15, text: 'Intermaniento'},
+    {id: 16, text: 'Ex-fumador'}
   ]
 
   ngOnInit() {

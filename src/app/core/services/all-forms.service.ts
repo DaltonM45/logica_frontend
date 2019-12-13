@@ -27,7 +27,6 @@ export class AllFormsServices{
             'Telefono': [null, [Validators.required]],
             'Celular': [null],
             'Email': [null],
-            'Pais': [null, [Validators.required]],
             'Provincia': [null, [Validators.required]],
             'Municipio': [null, [Validators.required]],
             'Sector': [null, [Validators.required]]
